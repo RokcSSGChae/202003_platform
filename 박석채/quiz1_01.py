@@ -2,9 +2,10 @@
 가로의 숫자를 입력하시오 :
 세로의 숫자를 입력하시오 : """
 
-num1 = input('가로의 숫자를 입력하시오 : ')
-num2 = input('세로의 숫자를 입력하시오 : ')
-print('''★★★★★
-★  {}  ★
-★  {}  ★
-★★★★★'''.format(num1, num2))
+width = int(input('가로의 숫자를 입력하시오 : '))
+height= int(input('세로의 숫자를 입력하시오 : '))
+
+for i in range(height):
+    for j in range(width):
+        print('★', end = '')
+    print()
